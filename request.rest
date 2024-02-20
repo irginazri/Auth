@@ -1,0 +1,26 @@
+GET http://localhost:5000/user/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZFVzZXIiOjEsIm5hbWUiOiJzdXBlcm1pbiIsImVtYWlsIjoic3VwZXJtaW5AbWltaW4uY29tIiwiaWF0IjoxNzA4NDI4NDIwLCJleHAiOjE3MDg0Mjg0NDB9.8SVQON9Uar3dKObrb-7JG2xMEwOvoVm5U-VMmpl5clM
+
+###
+POST http://localhost:5000/user/register
+Content-Type: application/json
+
+{
+    "name" : "irginazri",
+    "email": "irginazri@gmail.com",
+    "password" : "130396",
+    "confirmPass": "130396"
+
+}
+
+###
+POST http://localhost:5000/user/login
+Content-Type: application/json
+
+{
+    "name" : "supermin",
+    "password" : "13"
+}
+
+###
+GET http://localhost:5000/user/token
